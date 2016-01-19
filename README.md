@@ -1,22 +1,24 @@
-# linter-sq
+# linter-imp
 
-Squirrel langualge Atom editor, utilizing standard Squirrel compiler binary – __sq__.
+Linter for Electric Imp variety of Squirrel.
+
+Utilizes standard Squirrel compiler binary – __sq__.
 
 ## OS X TL;RD
 
 ```bash
 brew install squirrel
-apm install linter-sq
+apm install linter-imp
 ```
 
 ## Plugin installation
 
-Install from the Settings pane of Atom by searching for and installing the `linter-sq` package.
+Install from the Settings pane of Atom by searching for and installing the `linter-imp` package.
 
 Or install from terminal with:
 
 ```
-apm install linter-sq
+apm install linter-imp
 ```
 
 ## Squirrel installation
@@ -33,26 +35,41 @@ __Linux, Windows__
 
 ### Atom package
 
-* `$ apm install squirrel-linter`
+* `$ apm install linter-imp`
 
-## Using with Electric Imp
+## Electric Imp-specific features
+
+In order to be able to run the Electric Imp code, shims are automatically added to the source:
  
-### server.log() shim
+* server.log() 
+* imp.wakeup()
+* (more to come)
 
-The following code creates a shim for server.log():
+## Configuration options
 
-```squirrel
-// server.log shim
-if (!("server" in getroottable())) {
-  server.log <- {
-    log = print
-  };
-}
-```
+### lint-imp.execPath
 
-### Configuring Squirrel compiler
+\[default: "sq"\]
 
-Electric Imp uses non-standard Squirrel compiler, so to replicate EI environment __liter-sq.execPath__ config option can be set to use the specific compiler binary.
+Electric Imp uses non-standard Squirrel compiler, so to replicate EI environment this config option can be set to use the specific compiler binary.
+
+### lint-imp.verbose
+
+\[default: true\]
+
+If this option is set to _true_, compiler output and other debug infoirmation will be displayed in developer tools console. Press Ctrl+Cmd+J (OSX) to show the console. 
+
+### lint-imp.run
+
+\[default: true\]
+
+If this option is set to _true_, EI shims will be incliuded and file will be executed, rather than just compiled. The output will appear in devtools console.  
+
+## How is this different from lint-squirrel
+
+* Uses the standard squirrel distribution, easily obtainalbe with Homebrew on OS X
+* Allows code execution to catch runtime errors
+* Adds EI-specific shims to the code
 
 ## License
 
