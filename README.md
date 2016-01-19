@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [linter-imp](#linter-imp)
+  - [OS X TL;RD](#os-x-tlrd)
+  - [Plugin installation](#plugin-installation)
+  - [Squirrel installation](#squirrel-installation)
+    - [Atom package](#atom-package)
+  - [Electric Imp-specific features](#electric-imp-specific-features)
+  - [Configuration options](#configuration-options)
+    - [lint-imp.execPath](#lint-impexecpath)
+    - [lint-imp.verbose](#lint-impverbose)
+    - [lint-imp.run](#lint-imprun)
+  - [How is this different from lint-squirrel](#how-is-this-different-from-lint-squirrel)
+  - [License](#license)
+  - [Author](#author)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # linter-imp
 
 Linter for Electric Imp variety of Squirrel.
