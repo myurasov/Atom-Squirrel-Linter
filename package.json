@@ -1,7 +1,7 @@
 {
   "name": "linter-imp",
   "main": "./lib/main",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Electric Imp-compatible Squirrel Linter",
   "repository": {
     "type": "git",
