@@ -1,12 +1,14 @@
-# linter-sq
+# linter-imp
 
-Squirrel langualge Atom editor, utilizing standard Squirrel compiler binary – __sq__.
+Linter for Electric Imp variety of Squirrel.
+
+Utilizes standard Squirrel compiler binary – __sq__.
 
 ## OS X TL;RD
 
 ```bash
 brew install squirrel
-apm install linter-sq
+apm install linter-imp
 ```
 
 ## Plugin installation
@@ -35,7 +37,7 @@ __Linux, Windows__
 
 * `$ apm install squirrel-linter`
 
-## Using with Electric Imp
+## Electric Imp-specific features
  
 ### server.log() shim
 
@@ -50,7 +52,18 @@ if (!("server" in getroottable())) {
 }
 ```
 
-### Configuring Squirrel compiler
+### imp.wakeup() shim
+
+```squirrel
+// server.log shim
+if (!("imp" in getroottable())) {
+  server.log <- {
+    log = print
+  };
+}
+```
+
+## Configuring Squirrel compiler
 
 Electric Imp uses non-standard Squirrel compiler, so to replicate EI environment __liter-sq.execPath__ config option can be set to use the specific compiler binary.
 
