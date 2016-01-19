@@ -1,11 +1,11 @@
 {
-  "name": "linter-sq",
+  "name": "linter-imp",
   "main": "./lib/main",
   "version": "0.1.0",
   "description": "Lint Squirrel",
   "repository": {
     "type": "git",
-    "url": "https://github.com/myurasov/linter-sq"
+    "url": "https://github.com/myurasov/linter-imp"
   },
   "license": "MIT",
   "engines": {
