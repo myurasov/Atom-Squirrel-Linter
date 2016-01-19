@@ -1,7 +1,7 @@
 {
   "name": "linter-imp",
   "main": "./lib/main",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Electric Imp-compatible Squirrel Linter",
   "repository": {
     "type": "git",
@@ -20,8 +20,7 @@
   },
   "dependencies": {
     "atom-linter": "^4.3.1",
-    "atom-package-deps": "^3.0.7",
-    "clang-flags": "^0.2.2"
+    "atom-package-deps": "^3.0.7"
   },
   "packages-deps": [
     "linter"
