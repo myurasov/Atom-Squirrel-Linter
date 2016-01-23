@@ -1,11 +1,11 @@
 {
-  "name": "linter-imp",
+  "name": "squirrel-linter",
   "main": "./lib/main",
   "version": "0.2.3",
   "description": "Electric Imp-compatible Squirrel Linter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/myurasov/linter-imp"
+    "url": "https://github.com/myurasov/Atom-Squirrel-Linter"
   },
   "license": "MIT",
   "engines": {
