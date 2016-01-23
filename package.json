@@ -1,8 +1,16 @@
 {
   "name": "squirrel-linter",
   "main": "./lib/main",
-  "version": "0.2.3",
-  "description": "Electric Imp-compatible Squirrel Linter",
+  "version": "0.3.0",
+  "description": "Squirrel Linter, Electric Imp-compatible ",
+  "keywords": [
+    "squirrel",
+    "linter",
+    "nut",
+    "electric imp",
+    "imp",
+    "sq"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/myurasov/Atom-Squirrel-Linter"
