@@ -2,17 +2,17 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [linter-imp](#linter-imp)
+- [squirrel-linter](#squirrel-linter)
   - [OS X TL;RD](#os-x-tlrd)
   - [Plugin installation](#plugin-installation)
   - [Squirrel installation](#squirrel-installation)
     - [Atom package](#atom-package)
   - [Electric Imp-specific features](#electric-imp-specific-features)
   - [Configuration options](#configuration-options)
-    - [lint-imp.execPath](#lint-impexecpath)
-    - [lint-imp.verbose](#lint-impverbose)
-    - [lint-imp.run](#lint-imprun)
-  - [How is this different from lint-squirrel](#how-is-this-different-from-lint-squirrel)
+    - [squirrel-linter.execPath](#squirrel-linterexecpath)
+    - [squirrel-linter.verbose](#squirrel-linterverbose)
+    - [squirrel-linter.run](#squirrel-linterrun)
+  - [How is this different from linter-squirrel](#how-is-this-different-from-linter-squirrel)
   - [License](#license)
   - [Author](#author)
 
