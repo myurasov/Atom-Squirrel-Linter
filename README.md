@@ -18,9 +18,9 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# linter-imp
+# squirrel-linter
 
-Linter for Electric Imp variety of Squirrel.
+Linter for Squirrel with support for Electric Imp platform.
 
 Utilizes standard Squirrel compiler binary – __sq__.
 
@@ -28,18 +28,10 @@ Utilizes standard Squirrel compiler binary – __sq__.
 
 ```bash
 brew install squirrel
-apm install linter-imp
+apm install squirrel-linter
 ```
 
 ## Plugin installation
-
-Install from the Settings pane of Atom by searching for and installing the `linter-imp` package.
-
-Or install from terminal with:
-
-```
-apm install linter-imp
-```
 
 ## Squirrel installation
 
@@ -55,39 +47,42 @@ __Linux, Windows__
 
 ### Atom package
 
-* `$ apm install linter-imp`
+* `$ apm install squirrel-linter`
+
+Alternatively, can be installed from the Settings pane of Atom by searching for and installing the `squirrel-linter` package.
 
 ## Electric Imp-specific features
 
 In order to be able to run the Electric Imp code, shims are automatically added to the source:
- 
-* server.log() 
+
+* server.log()
 * imp.wakeup()
+* \_() - print JSON representation of a table
 * (more to come)
 
 ## Configuration options
 
-### lint-imp.execPath
+### squirrel-linter.execPath
 
 \[default: "sq"\]
 
 Electric Imp uses non-standard Squirrel compiler, so to replicate EI environment this config option can be set to use the specific compiler binary.
 
-### lint-imp.verbose
+### squirrel-linter.verbose
 
 \[default: true\]
 
-If this option is set to _true_, compiler output and other debug infoirmation will be displayed in developer tools console. Press Ctrl+Cmd+J (OSX) to show the console. 
+If this option is set to _true_, compiler output and other debug information will be displayed in developer tools console. Press Ctrl+Cmd+J (OSX) to show the console.
 
-### lint-imp.run
+### squirrel-linter.run
 
 \[default: true\]
 
-If this option is set to _true_, EI shims will be incliuded and file will be executed, rather than just compiled. The output will appear in devtools console.  
+If this option is set to _true_, EI shims will be included and file will be executed, rather than just compiled. The output will appear in devtools console.  
 
-## How is this different from lint-squirrel
+## How is this different from linter-squirrel
 
-* Uses the standard squirrel distribution, easily obtainalbe with Homebrew on OS X
+* Uses the standard squirrel distribution, easily obtainable with Homebrew on OS X
 * Allows code execution to catch runtime errors
 * Adds EI-specific shims to the code
 
