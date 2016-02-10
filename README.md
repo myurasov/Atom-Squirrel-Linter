@@ -7,6 +7,8 @@
   - [Plugin installation](#plugin-installation)
   - [Squirrel installation](#squirrel-installation)
     - [Atom package](#atom-package)
+      - [Dependencies](#dependencies)
+  - [Usage](#usage)
   - [Electric Imp-specific features](#electric-imp-specific-features)
   - [Configuration options](#configuration-options)
     - [squirrel-linter.execPath](#squirrel-linterexecpath)
@@ -28,7 +30,7 @@ Utilizes standard Squirrel compiler binary – __sq__.
 
 ```bash
 brew install squirrel
-apm install squirrel-linter
+apm install language-squirrel linter squirrel-linter
 ```
 
 ## Plugin installation
@@ -49,7 +51,19 @@ __Linux, Windows__
 
 * `$ apm install squirrel-linter`
 
-Alternatively, can be installed from the Settings pane of Atom by searching for and installing the `squirrel-linter` package.
+Alternatively, package can be installed from the Settings pane of Atom by searching for and installing the `squirrel-linter` package.
+
+#### Dependencies
+
+You need **linter** and **language-squirrel** packages installed as well. If you don't have them, run:
+
+* `$ apm install linter language-squirrel`
+
+or install them via the Settings pane.
+
+## Usage
+
+After installation, you will see error highlighted in the editor and the output in the console. (To view the console, press Cmd+Alt+I on OS X, or Ctrl+Alt+I on Windows.)
 
 ## Electric Imp-specific features
 
