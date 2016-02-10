@@ -4,13 +4,14 @@
 
 - [squirrel-linter](#squirrel-linter)
   - [OS X TL;RD](#os-x-tlrd)
-  - [Plugin installation](#plugin-installation)
-  - [Squirrel installation](#squirrel-installation)
-    - [Atom package](#atom-package)
+  - [Plugin Installation](#plugin-installation)
+  - [Squirrel Installation](#squirrel-installation)
+    - [Atom Package](#atom-package)
       - [Dependencies](#dependencies)
   - [Usage](#usage)
-  - [Electric Imp-specific features](#electric-imp-specific-features)
-  - [Configuration options](#configuration-options)
+  - [Electric Imp-specific Features](#electric-imp-specific-features)
+  - [Convenience Features](#convenience-features)
+  - [Configuration Options](#configuration-options)
     - [squirrel-linter.execPath](#squirrel-linterexecpath)
     - [squirrel-linter.verbose](#squirrel-linterverbose)
     - [squirrel-linter.run](#squirrel-linterrun)
@@ -33,9 +34,9 @@ brew install squirrel
 apm install language-squirrel linter squirrel-linter
 ```
 
-## Plugin installation
+## Plugin Installation
 
-## Squirrel installation
+## Squirrel Installation
 
 In order for plugin to work, __sq__ executable should be available.
 
@@ -47,7 +48,7 @@ __Linux, Windows__
 
 [http://sourceforge.net/projects/squirrel/](http://sourceforge.net/projects/squirrel/)
 
-### Atom package
+### Atom Package
 
 * `$ apm install squirrel-linter`
 
@@ -65,16 +66,20 @@ or install them via the Settings pane.
 
 After installation, you will see error highlighted in the editor and the output in the console. (To view the console, press Cmd+Alt+I on OS X, or Ctrl+Alt+I on Windows.)
 
-## Electric Imp-specific features
+## Electric Imp-specific Features
 
 In order to be able to run the Electric Imp code, shims are automatically added to the source:
 
-* server.log()
-* imp.wakeup()
-* \_() - print JSON representation of a table
-* (more to come)
+* server.log(*var*)
+* imp.wakeup(*timeout*, *callback*)
+* imp.cancelwakeup(*timeout_id*)
 
-## Configuration options
+## Convenience Features
+
+* \_(*var*) – converts a variable to JSON
+* \_\_(*var*) – prints a variable as JSON
+
+## Configuration Options
 
 ### squirrel-linter.execPath
 
@@ -86,7 +91,7 @@ Electric Imp uses non-standard Squirrel compiler, so to replicate EI environment
 
 \[default: true\]
 
-If this option is set to _true_, compiler output and other debug information will be displayed in developer tools console. Press Ctrl+Cmd+J (OSX) to show the console.
+If this option is set to _true_, compiler output and other debug information will be displayed in developer tools console. To show the console press Ctrl+Cmd+I OS X, or Ctrl+Alt+I on Windows.
 
 ### squirrel-linter.run
 
