@@ -111,4 +111,4 @@ MIT
 
 ## Author
 
-Mikhail Yurasov <mikhail@electricimp.com>
+Mikhail Yurasov <me@yurasov.me>
